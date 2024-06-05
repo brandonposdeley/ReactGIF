@@ -15,7 +15,6 @@ function App() {
     try {
       const res = await GetGift(text,offset)
       if(res){
-        console.log(res.data)
          setData(res.data.data)
          setTotalPage(res.data.pagination.total_count)
          setOffset(res.data.pagination.offset)
